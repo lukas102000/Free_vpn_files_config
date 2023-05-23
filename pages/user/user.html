@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/icons/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="../../index.css">
+</head>
+<body>
+    <section class="modal-chane-foto"  onclick="OpensetProfilsImg2()">
+        <div>
+            <button>Ver foto</button> <br><br>
+            <label for="profild-img">Adicionar uma foto</label>
+        </div>
+        <input type="file" onchange="setProfilsImg(this)" id="profild-img" accept="image/*">
+    </section>
+    <header class="profil-header">
+        <a href="../../index.html" class="bi-arrow-left"></a>
+    </header>
+
+    <nav class="profile-sub">
+        <div class="user-img" onclick="OpensetProfilsImg()">
+            <i class="bi-camera-fill"></i>
+        </div>
+        <div>
+            <h1>Username</h1>
+            <small>Convidados <br> <span>50k</span> </small>
+        </div>
+    </nav>
+    <h5 class="bi-people-fill"> Conta </h5>
+    <section class="profils-links">
+        <div>
+            <i class="bi-person-fill"></i>
+            <small>Username</small>
+            <i ></i>
+        </div>
+        <div>
+            <i class="bi-telephone-fill"></i>
+            <small>number</small>
+            <i ></i>
+        </div>
+        <div>
+            <i class="bi-lock-fill"></i>
+            <small>Senha</small>
+            <i ></i>
+        </div>
+        <div>
+            <i class="bi-envelope-fill"></i>
+            <small>Email</small>
+            <i ></i>
+        </div>
+        <h5 class="bi-people-fill"> Convidar amigos </h5>
+        <div>
+            <i class="bi-share"></i>
+            <input type="text" name="" id="">
+            <i></i>
+        </div>
+        <div>
+            <i class="bi-x" style="color: red;" ></i>
+            <small style="color: red;">Remover a conta</small>
+            <i></i>
+        </div>
+    </section>
+
+    <script src="../../asset/js/user-scripts.js"></script>
+</body>
+</html>

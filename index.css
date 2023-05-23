@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    color: black;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+/********** app-head*********/
+.app-head{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+}
+.app-head a i { margin: 10px; font-size: 20pt; color: rgb(253, 63, 37); }
+.app-head h1 { font-size: 17pt;}
+.app-head div{ 
+    width: 2.3rem;
+    height: 2.3rem; 
+    border-radius: 50%;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.089);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    animation: spinner infinite 5s linear;
+}
+.bar-search{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.bar-search input{
+    width: 80%;
+    color: rgb(78, 78, 78);
+    margin: 10px;
+    font-weight: 500;
+    font-size: 12pt;
+}
+.bar-search  i{ color: rgb(128, 128, 128); margin: 10px; font-size: 15pt;}
+/**** bainer ****/
+
+.bainer{
+    margin-top: 10px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width: 98%;
+    height: max-content;
+    display: flex;
+    background: linear-gradient(90deg, blueviolet, rgb(26, 224, 250));
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.baner-image{
+    width: 90%;
+    height: 20vh;
+    max-height: 20vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./asset/images/banner.png);
+    transition: 0.3s;
+    
+}
+.descript{
+    width: 70%;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15pt;
+    color: white;
+}
+.descript small{ color: white; text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);}
+h5{ font-size: 15pt; margin: 15px;}
+
+
+/** main-container ****/
+.main-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+strong{ font-weight: normal;}
+.main-container article{
+    width: max-content;
+    max-width: 50%;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin:3px;
+    color: white;
+    box-shadow: 0 0 10px rgba(204, 1, 255, 0.295);
+}
+.main-container article div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.main-container article i{
+    font-size: 50pt;
+    margin: 10px;
+    color: rgb(188, 147, 192);
+}
+.main-container article span{ font-weight: 600; margin-top: 7px; color: rgb(0, 0, 0);}
+.main-container article small{ font-size: 12pt; font-weight: 500;color: rgb(0, 0, 0);}
+
+.getFiles{ 
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.288);
+    position: fixed;
+    z-index: 120;
+    display: none;
+    justify-content: center;
+}
+.getFiles section{
+    width: 70%;
+    height: max-content;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    transform: translateY(200px);
+}
+.getFiles article{
+    width: 100%;
+    font-weight: 600;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getFiles article small{ font-size: 13pt;}
+.getFiles section div{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: rgb(255, 94, 0);
+    border-bottom-color: rgb(255, 94, 0);
+    margin-right: 15px;
+    margin-top: 10px;
+    animation: spinner infinite 0.5s linear;
+}
+.getFiles article a{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 94, 0);
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.getFiles .donwloads{ display: none;}
+.getFiles article a i{ color: white; margin-left: 10px;}
+@keyframes spinner {
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+}
+

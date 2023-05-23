@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free VPN Files Config</title>
+    <link rel="shortcut icon" href="./asset/images/vpn-icon-png-8.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./logs.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../asset/icons/bootstrap-icons/bootstrap-icons.css">
+
+    <!--- my apis -->
+
+</head>
+<body>
+    <section class="modal-sms">
+        <article>
+            <i id="icon" class="bi-x-circle"> Erro</i>
+            <span>
+                Erro ao criar conta este número já possuí um ID!
+                Por favor inseri outro número
+            </span>
+        </article>
+    </section>
+    <header class="app-head">
+        <a href="../index.html"><h1> <i class="bi-egg-fried"></i></h1></a>
+        <h1>Criar conta</h1>
+        <i></i>
+    </header>
+    <form id="forms">
+        <article>
+            <div>
+                <input type="text" placeholder="Nome do usuário" id="name">
+                <i class="bi-person"></i>
+            </div>
+            <div>
+                <input type="password" id="senha1" placeholder="Criar uma senha" minlength="6">
+                <i class="bi-lock"></i>
+            </div>
+            <button type="submit" onclick="userAuth()">Criar Conta</button>
+        </article>
+    </form>
+
+    <script src="../asset/js/async.js"></script>
+    
+</body>
+</html>

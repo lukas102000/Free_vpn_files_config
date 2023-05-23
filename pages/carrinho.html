@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free VPN Files Config</title>
+    <link rel="shortcut icon" href="./asset/images/vpn-icon-png-8.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./logs.css">
+    <link rel="stylesheet" href="../asset/icons/bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <header class="app-head">
+        <a href="../index.html"><h1> <i class="bi-egg-fried"></i></h1></a>
+        <h1>Carrinho</h1>
+        <div class="user-photo" ><i class="bi-egg-fried"></i></div>
+    </header>
+    <br><br><br><br>
+    <secion class="cont-top">
+        <h1>Adicionar ao carrinho <i class="bi-cart"></i></h1>
+    </secion>
+    <secion class="carrinhos">
+
+        <form action="" style="padding-top: 20px;">
+
+            <article class="descCarr">
+                <div>
+                    <img  style="margin-right: 5px;" height="30">
+                    <small >SocksIP</small>
+                </div>
+                <i class="bi-file-earmark-lock2" style="font-size: 50pt;"></i> <br>
+                <span>
+                    Operadora: <small >Africell</small> 
+                </span> <br>
+                <span>
+                    Plataforma: <strong >Android</strong> 
+                </span> <br>
+                <span>
+                    Preço: <strong >1.000,00kz</strong> 
+                </span> <br>
+                <span>
+                    Validade: <strong >30Dias</strong> 
+                </span>
+            </article> <br>
+
+            <article>
+                <span>
+                    Para obter o pacote Premium, contacta o entregador!
+                </span> <br>
+                <a class="bi-telephone-fill">+244 947 344 147</a>
+                <a class="bi-telephone-fill">+244 954 181 002</a>
+                <a href="https://t.me/muana_mayele"> <img src="../asset/images/Telegram_logo.svg.webp" alt="Telegram" height="30">Muana Mayele</a>
+                <a href="https://wa.me/message/QVIXX2HAA2EQL1"> 
+                    <img src="../asset/images/WhatsApp.svg.png" alt="WhatsApp" height="40">
+                    Muana Mayele
+                </a>
+            </article> <br>
+            
+        </form>
+    </secion>
+    
+
+    <script>
+        var descCarr = document.querySelector(".descCarr")
+
+        descCarr.querySelector("img").setAttribute("src", window.localStorage.getItem("imgCar"))
+        descCarr.querySelectorAll("small")[0].innerHTML = window.localStorage.getItem("descCar")
+        descCarr.querySelectorAll("small")[1].innerHTML = window.localStorage.getItem("operaCar")
+        descCarr.querySelectorAll("strong")[0].innerHTML = window.localStorage.getItem("platCar")
+        descCarr.querySelectorAll("strong")[1].innerHTML =  window.localStorage.getItem("precoCar")
+        descCarr.querySelectorAll("strong")[2].innerHTML =  window.localStorage.getItem("validCar")
+    </script>
+</body>
+</html>
